@@ -46,17 +46,18 @@ ostream& operator << (ostream& out, Alpha& z)
 
 
 
-int main(int argc, char * argv[])
+int main(int argc, char* argv[])
 {
-    char tempstr1[32], tempstr2[32];
-    //Alpha x(argv[1]);
-    //Alpha y(argv[2]);
+    //char tempstr1[32], tempstr2[32];
+    Alpha x(argv[1]);
+    Alpha y(argv[2]);
     Alpha z;
-    Alpha x(tempstr1);
-    Alpha y(tempstr2);
-    cin >> tempstr1;
-    cin >> tempstr2;
+    //cin >> tempstr1;
+    //cin >> tempstr2;
+    //Alpha x(tempstr1);
+    //Alpha y(tempstr2);
     z = x*y;
     cout << z <<endl;
     return 0;
 }
+
